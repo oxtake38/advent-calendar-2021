@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  python3:
+    build: .
+    image: 'rl_adv_cal_2021:latest'
+    container_name: 'rl_adv_cal_2021'
+    tty: true
+    working_dir: '/work'
+    volumes:
+      - ../..:/work

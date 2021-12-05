@@ -1,0 +1,8 @@
+/.vscode
+/tmp
+/data
+/tensorboard
+!/tensorboard/docker-compose.yml
+!/tensorboard/Dockerfile
+
+*__pycache__*

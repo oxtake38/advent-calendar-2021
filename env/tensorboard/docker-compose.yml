@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  python3:
+    build: .
+    image: 'tensorboard:latest'
+    container_name: 'tensorboard'
+    tty: true
+    ports:
+      - "6006:6006"
+    working_dir: '/logs'
+    volumes:
+      - ../..:/logs
